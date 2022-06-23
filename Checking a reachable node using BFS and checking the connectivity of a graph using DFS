@@ -46,13 +46,12 @@ void main()
     printf("\nEnter the starting vertex : ");
     scanf("%d",&v);
     bfs(v);
-    printf("Connections :\n");
-    
     printf("\nThe node which are reachable are : \n");
     for(i=1;i<=n;i++)
         if(visited[i])
             printf("%d\t",i);
     printf("\n");
+    printf("\n----------Checking The Connectivity of the graph----------\n");
     dfs(1);
     for(i=1;i<=n;i++)
     {
